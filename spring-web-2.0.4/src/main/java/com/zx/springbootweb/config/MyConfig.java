@@ -42,7 +42,7 @@ public class MyConfig implements WebMvcConfigurer {
          * 而是直接通过/css、/img或/js访问的.
          * 因此我们需要做的就是将这些拦截排除掉或者将存放这些文件夹的文件夹排除掉即可,和/static是没有关系的
          **/
-        registry.addInterceptor(interceptor).addPathPatterns("/**").
-                excludePathPatterns("/", "/login.html", "/user/login", "/asserts/**");
+//        registry.addInterceptor(interceptor).addPathPatterns("/**").
+//                excludePathPatterns("/", "/login.html", "/user/login", "/asserts/**");
     }
 }
