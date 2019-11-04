@@ -83,7 +83,7 @@
 						</table>
 					</div>
 					<form id="deleteEmpForm" method="post">
-						<input name="_method" value="delete"/>
+						<input type="hidden" name="_method" value="delete"/>
 					</form>
 				</main>
 			</div>
@@ -95,17 +95,11 @@
 		<script type="text/javascript" src="asserts/js/jquery-3.2.1.slim.min.js" th:src="@{/asserts/js/jquery-3.2.1.slim.min.js}"></script>
 		<script type="text/javascript" src="asserts/js/popper.min.js" th:src="@{/asserts/js/popper.min.js}"></script>
 		<script type="text/javascript" src="asserts/js/bootstrap.min.js" th:src="@{/asserts/js/bootstrap.min.js}"></script>
-
+		<script type="text/javascript" src="asserts/js/operatorEmp.js" th:src="@{/asserts/js/operatorEmp.js}"></script>
 		<!-- Icons -->
 		<script type="text/javascript" src="asserts/js/feather.min.js" th:src="@{/asserts/js/feather.min.js}"></script>
 		<script>
 			feather.replace()
-		</script>
-		<script>
-			$(".deleteBtn").click(function() {
-				$("#deleteEmpForm").attr("action", $(this).attr("del_uri")).submit();
-				return true
-			});
 		</script>
 	</body>
 
