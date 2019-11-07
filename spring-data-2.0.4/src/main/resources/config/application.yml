@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.0.174:3307/mysql?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    initialization-mode: always #需要加上该属性，否则不会自动执行sql文件
+    schema: #通常存放建表语句
+      - classpath:/schema-all.sql
+    #data: #通常存放插入、删除语句
+      # - classpath:/data.sql
