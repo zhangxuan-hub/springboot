@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.0.174:3306/JPA?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 10
+      connection-test-query: SELECT 1
+      idle-timeout: 30000
+      connection-timeout: 30000
+      validation-timeout: 3000
+      max-lifetime: 30000
+  jpa:
+    hibernate:
+      ddl-auto: update #更新或者创建数据表，第一次启动没有该表时创建，后面该表进行修改时进行更新
+    show-sql: true #控制台显示执行的sql

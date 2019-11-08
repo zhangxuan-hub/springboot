@@ -26,11 +26,11 @@ public class Department {
         this.id = id;
     }
 
-    public String getLastName() {
+    public String getDepartmentName() {
         return departmentName;
     }
 
-    public void setLastName(String departmentName) {
+    public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
     }
 

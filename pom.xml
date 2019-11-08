@@ -17,6 +17,7 @@
     <module>spring-web-2.0.4</module>
       <module>spring-data</module>
       <module>springboot-mybatis-2.0.4</module>
+      <module>springboot-JPA-2.0.4</module>
   </modules>
 
   <name>springboot</name>
@@ -89,6 +90,7 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.47</version>
+      <scope>runtime</scope>
     </dependency>
   </dependencies>
 
